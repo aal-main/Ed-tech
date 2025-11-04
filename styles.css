@@ -193,6 +193,28 @@ body {
     color: #3498db;
 }
 
+/* Hero biography and consistent typography */
+.hero-bio {
+    color: #4a4a4a;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    line-height: 1.45;
+}
+
+/* Secondary CTA style */
+.hero-cta.secondary {
+    background-color: #2ecc71;
+}
+
+.hero-features .feature span {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.hero-features .feature i {
+    font-size: 1.05rem;
+}
+
 /* Mobile Navigation */
 .mobile-menu-btn {
     display: none;
