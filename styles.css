@@ -53,6 +53,12 @@ body {
     display: inline-block;
 }
 
+/* Make logo appear solid black using CSS filter (works for PNG with transparency) */
+.site-logo.black {
+    /* Turn any colored pixels into black while preserving transparency */
+    filter: brightness(0) saturate(100%);
+}
+
 .logo-text {
     display: inline-block;
 }
