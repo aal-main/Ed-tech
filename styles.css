@@ -187,11 +187,40 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
+    margin-bottom: 1rem;
+    line-height: 1.05;
+}
+
+/* Greeting + focused name */
+.hero-title .greeting {
+    display: block;
+    font-size: 1.1rem;
+    color: #6b7280; /* muted */
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.hero-title .name {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #0b2545; /* strong dark */
+    position: relative;
+    line-height: 1.02;
+}
+
+.hero-title .name::after {
+    /* subtle accent bar under the name to keep focus */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 10px;
+    width: 58%;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    border-radius: 8px;
+    opacity: 0.22;
+    z-index: -1;
 }
 
 .hero-subtitle {
@@ -253,63 +282,6 @@ body {
     font-size: 1.05rem;
 }
 
-/* Class bio card - modern design */
-.class-bio-card {
-    display: flex;
-    gap: 1.25rem;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,250,0.85));
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(46,61,73,0.08);
-    margin-top: 1rem;
-}
-
-.class-bio-text {
-    flex: 1 1 60%;
-}
-
-.class-badges {
-    display: flex;
-    gap: 0.6rem;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    background: #ffffff;
-    padding: 0.5rem 0.8rem;
-    border-radius: 999px;
-    box-shadow: 0 6px 18px rgba(52,152,219,0.06);
-    color: #2c3e50;
-    font-weight: 600;
-}
-
-.badge i {
-    color: #3498db;
-    font-size: 0.95rem;
-}
-
-@media (max-width: 768px) {
-    .class-bio-card {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .class-badges {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .badge {
-        padding: 0.5rem 0.7rem;
-    }
-}
-
 /* Mobile Navigation */
 .mobile-menu-btn {
     display: none;
@@ -332,8 +304,8 @@ body {
 }
 
 @media (max-width: 992px) {
-    .hero-title {
-        font-size: 3rem;
+    .hero-title .name {
+        font-size: 2.6rem;
     }
     
     .hero-subtitle {
@@ -397,7 +369,8 @@ body {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        /* adjust greeting size on smaller screens */
+        font-size: 1.2rem;
     }
 
     .feature {
