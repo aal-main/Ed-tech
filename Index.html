@@ -37,80 +37,238 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-title-wrapper">
-                    <h1 class="hero-title">
-                        <span class="hero-greeting">Hi, I'm</span>
-                        <span class="hero-name">Abdullah Al Main</span>
-                        <span class="hero-subtitle">Mathematician | Educator</span>
-                    </h1>
-                </div>
-            
-                <p class="hero-bio">I teach <span class="class-highlight"><strong>Class 5–8</strong></span> (building strong foundations and problem-solving skills), <span class="class-highlight"><strong>SSC (Science)</strong></span> (concept mastery & exam preparation), and <span class="class-highlight"><strong>HSC (Mathematics & ICT)</strong></span>.</p>
-
-                <div class="hero-actions">
-                    <a href="#courses" class="hero-cta">Explore Courses</a>
-                    <a href="#contact" class="hero-cta secondary">Contact Me</a>
+        <div class="container">
+            <div class="hero-content-wrapper">
+                <!-- Profile Image in Background -->
+                <div class="hero-bg-image">
+                    <img
+                        src="Image/my image.JPG"
+                        alt="Abdullah Al Main - Mathematics Educator"
+                        loading="lazy"
+                        class="hero-bg-img"
+                        fetchpriority="high"
+                        decoding="async">
+                    <div class="hero-overlay"></div>
                 </div>
 
-                
-            </div>
-            <div class="hero-image">
-                <img 
-                    src="Image/my image.JPG" 
-                    alt="Mathematics Education Illustration" 
-                    loading="lazy" 
-                    class="hero-img"
-                    fetchpriority="high"
-                    decoding="async">
+                <!-- Main Content Overlay -->
+                <div class="hero-content">
+                    <!-- Profile Image Section -->
+                    <div class="hero-image-section">
+                        <div class="profile-image-container">
+                            <img
+                                src="Image/my image.JPG"
+                                alt="Abdullah Al Main - Mathematics Educator"
+                                class="profile-image">
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Text Content Section -->
+                    <div class="hero-text-section">
+                        <div class="hero-badge">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Professional Mathematics Educator</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hi, I'm</span>
+                            <span class="hero-name">Abdullah Al Main</span>
+                        </h1>
+
+                        <p class="hero-subtitle">Mathematician | Educator</p>
+
+                        <p class="hero-description">
+                            I specialize in home tuition for <span class="highlight-text">Class 5–8</span>,
+                            <span class="highlight-text">SSC (Science)</span>, and <span class="highlight-text">HSC (Mathematics & ICT)</span>.
+                            Building strong foundations through personalized learning experiences.
+                        </p>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Teaching</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Students Helped</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Subjects</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-features">
+                            <div class="feature-tag">
+                                <i class="fas fa-home"></i>
+                                <span>Home Tuition</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-clock"></i>
+                                <span>Flexible Hours</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-star"></i>
+                                <span>Personalized Learning</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#courses" class="hero-cta primary">Explore Courses</a>
+                            <a href="#contact" class="hero-cta secondary">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <!-- Floating Certification Badge -->
+                    <div class="certification-floating">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <div class="cert-text">
+                                <span class="cert-title">MSc Mathematics</span>
+                                <span class="cert-status">Ongoing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Shapes Background -->
+                <div class="hero-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="courses">
+    <section id="courses" class="courses about">
         <div class="container">
             <h2 class="section-title">Courses I Teach</h2>
             <p class="section-intro">I provide personalized home tuition across school and college levels. Below are subjects I teach for each student group — use <em>Request Fee</em> to get a customized quote (fee varies by distance).</p>
 
             <div class="course-grid">
                 <!-- Class 5-8 -->
-                <article class="course-card" aria-labelledby="c1">
+                <article class="course-card about-card" aria-labelledby="c1" data-aos="fade-right">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
                     <h3 id="c1">Class 5–8</h3>
+                    <p class="course-description">Building strong foundations and essential problem-solving skills</p>
                     <ul class="course-subjects">
-                        <li>Mathematics</li>
-                        <li>English</li>
-                        <li>Science</li>
+                        <li><i class="fas fa-calculator"></i> Mathematics</li>
+                        <li><i class="fas fa-language"></i> English</li>
+                        <li><i class="fas fa-microscope"></i> Science</li>
                     </ul>
                     <a href="#contact" class="hero-cta request-fee">Request Fee</a>
                 </article>
 
                 <!-- SSC -->
-                <article class="course-card" aria-labelledby="c2">
+                <article class="course-card about-card" aria-labelledby="c2" data-aos="fade-left">
+                    <div class="card-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
                     <h3 id="c2">SSC (Science)</h3>
+                    <p class="course-description">Comprehensive science education with concept mastery and exam preparation</p>
                     <ul class="course-subjects">
-                        <li>Mathematics</li>
-                        <li>Higher Mathematics</li>
-                        <li>Chemistry</li>
-                        <li>Physics</li>
-                        <li>Biology</li>
+                        <li><i class="fas fa-calculator"></i> Mathematics</li>
+                        <li><i class="fas fa-superscript"></i> Higher Mathematics</li>
+                        <li><i class="fas fa-flask"></i> Chemistry</li>
+                        <li><i class="fas fa-bolt"></i> Physics</li>
+                        <li><i class="fas fa-dna"></i> Biology</li>
                     </ul>
                     <a href="#contact" class="hero-cta request-fee">Request Fee</a>
                 </article>
 
                 <!-- HSC -->
-                <article class="course-card" aria-labelledby="c3">
+                <article class="course-card about-card" aria-labelledby="c3" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
                     <h3 id="c3">HSC</h3>
+                    <p class="course-description">Advanced mathematics and information technology for higher secondary students</p>
                     <ul class="course-subjects">
-                        <li>Higher Mathematics</li>
-                        <li>ICT</li>
+                        <li><i class="fas fa-superscript"></i> Higher Mathematics</li>
+                        <li><i class="fas fa-laptop-code"></i> ICT</li>
                     </ul>
                     <a href="#contact" class="hero-cta request-fee">Request Fee</a>
                 </article>
             </div>
 
             <p class="fee-note"><strong>Note:</strong> Fees will vary depending on travel distance for home teaching. Please use the "Request Fee" button to contact me with your location so I can provide an accurate quote.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-intro">Get to know more about my background, education, and passion for mathematics education.</p>
+
+            <div class="about-grid">
+                <!-- Personal Information Card -->
+                <div class="about-card personal-info" data-aos="fade-right">
+                    <div class="card-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Personal Details</h3>
+                    <ul class="info-list">
+                        <li><strong>Name:</strong> Abdullah Al Main</li>
+                        <li><strong>Address:</strong> Hillview, Panchlish, Chattagram</li>
+                        <li><strong>Mobile:</strong> <a href="tel:01517830517">01517830517</a></li>
+                    </ul>
+                </div>
+
+                <!-- Education Timeline Card -->
+                <div class="about-card education-timeline" data-aos="fade-left">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educational Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>SSC (Science)</h4>
+                                <p>Completed in 2017</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>HSC (Science)</h4>
+                                <p>Completed in 2019</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>BSc in Mathematics</h4>
+                                <p>University of Chittagong, 2023</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item current">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>MSc in Applied Mathematics</h4>
+                                <p>University of Chittagong (Ongoing)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passion Statement Card -->
+                <div class="about-card passion" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>My Passion</h3>
+                    <p>I am dedicated to making mathematics accessible and enjoyable for students at all levels. My journey from completing my BSc in 2023 to pursuing MSc reflects my commitment to continuous learning and teaching excellence.</p>
+                    <p>Currently residing in Hillview, Panchlish, Chattagram, I provide personalized home tuition services tailored to each student's needs.</p>
+                </div>
+            </div>
         </div>
     </section>
 
