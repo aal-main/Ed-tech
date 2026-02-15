@@ -1,4 +1,3 @@
-import logo from '/logo.png'
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
@@ -36,7 +35,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} alt="MainKnowledge logo" className="h-8 w-8" />
+              <img src="/logo.png" alt="MainKnowledge logo" className="h-8 w-8" />
               <span className="text-xl font-bold">
                 Main<span className="text-blue-400">Knowledge</span>
               </span>

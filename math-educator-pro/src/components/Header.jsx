@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import logo from '/logo.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,7 +20,7 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-2">
-            <img src={logo} alt="MainKnowledge logo" className="h-10 w-10" />
+            <img src="/logo.png" alt="MainKnowledge logo" className="h-10 w-10" />
             <span className="text-2xl font-bold text-gray-800">
               Main<span className="text-blue-600">Knowledge</span>
             </span>

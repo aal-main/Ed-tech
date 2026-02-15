@@ -1,5 +1,3 @@
-import profileImage from '/my image.JPG?url'
-
 const Hero = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -24,7 +22,7 @@ const Hero = () => {
             <div className="text-center">
               <div className="relative mb-6">
                 <img
-                  src={profileImage}
+                  src="/my image.JPG"
                   alt="Abdullah Al Main"
                   className="w-80 h-80 rounded-full mx-auto object-cover border-8 border-blue-300 shadow-2xl transform hover:scale-105 transition-transform duration-300"
                 />
